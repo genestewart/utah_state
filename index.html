@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="Fontawesome/css/all.css">
+  <title>Navbar</title>
+</head>
+<body>
+  <header id="header">
+    <div class="header-left">
+      <img src="Images/Flag_of_the_State_of_Utah_(2011-2024).png" alt="Utah Flag" id="flag">
+    </div>
+    <h1>Header</h1>
+    <div class="header-right">
+      <img src="images/Seal_of_Utah.png" alt="Utah Seal" id="Seal">
+    </div>
+  </header>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-menu">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkBtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul class="navbar-list">
+        <li><a href="#">Home</a></li>
+        <li class="has-dropdown"><a href="#">Cities</a>
+          <ul class="dropdown">
+            <li class="dropdown-item"><a href="#">Salt Lake City</a></li>
+            <li class="dropdown-item"><a href="#">Heber City</a></li>
+            <li class="dropdown-item"><a href="#">St. George</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="main">
+    <h1>Main</h1>
+  </section>
+  <aside id="sidebar">Aside</aside>
+  <footer id="footer">Footer</footer>
+</body>
+</html>

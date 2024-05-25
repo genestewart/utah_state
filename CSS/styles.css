@@ -1,0 +1,177 @@
+@import url(/Fontawesome/css/all.css);
+
+:root {
+  --main: #126dc4;
+  --secondary: #0e80a7;
+  --third: #ffb100;
+  --g1: #1c2e40;
+  --g2: #eef4fa;
+  --g3: #205162;
+  --g4: #edf5f8;
+  --g5: #745a1e;
+  --g6: #fff9ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Century Gothic, PT Serif;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "navbar navbar navbar"
+  "sidebar main main"
+  "footer footer footer";
+  grid-template-rows: 100px 50px 1fr 100px;
+  grid-template-columns: 300px 1fr 1fr;
+  height: 100vh;
+}
+
+#header {
+  grid-area: header;
+}
+
+#navbar {
+  grid-area: navbar;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/* ..........header.......... */
+#header {
+  background-color: var(--main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+#flag {
+  height: 80px;
+  width: 160px;
+  cursor: pointer;
+}
+
+#Seal {
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}
+
+/* ..........navbar.......... */
+.navbar {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkBtn {
+  display: none;
+  margin-right: 100px;
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  color: var(--third);
+  line-height: 80px;
+}
+
+#check {
+  display: none;
+}
+
+.navbar-menu ul {
+  display: flex;
+  margin: 0px 50px;
+  list-style: none;
+}
+
+.navbar-menu ul li a {
+  padding: 5px 10px;
+  margin: 0px 10px;
+  font-size: 1.2rem;
+  color: var(--g6);
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: var(--third);
+  transition: all 1s;
+}
+
+.navbar-menu ul li a:hover {
+  background-color: var(--g6);
+  color: var(--g1);
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  width: 15rem;
+  z-index: 2;
+  background: black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 20rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  transform: translateX(-40%);
+  transition: opacity .15s ease-out;
+}
+
+.dropdown-item a {
+  width: 100%;
+  height: 100%;
+}
+
+.has-dropdown:focus-within .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (max-width:805px) {
+  .navbar-list {
+    width: 100%;
+    height: 80vh;
+    background-color: #21282C;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-evenly;
+    top: 7rem;
+    left: 100%;
+    transition: all 1s;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .checkBtn {
+    display: block;
+  }
+
+  #check:checked~ul {
+    left: 0%;
+  }
+}
+
+
