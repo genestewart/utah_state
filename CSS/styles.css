@@ -27,7 +27,7 @@ body {
   "sidebar main main"
   "footer footer footer";
   grid-template-rows: 100px 50px 1fr 100px;
-  grid-template-columns: 300px 1fr 1fr;
+  grid-template-columns: 200px 1fr 1fr;
   height: 100vh;
 }
 
@@ -59,6 +59,7 @@ body {
   align-items: center;
   padding: 0px 50px;
 }
+
 #flag {
   height: 80px;
   width: 160px;
@@ -71,11 +72,16 @@ body {
   cursor: pointer;
 }
 
+#title {
+  font-size: 50px;
+  font-style: bold;
+}
+
 /* ..........navbar.......... */
 .navbar {
   background-color: var(--secondary);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -156,7 +162,7 @@ body {
     flex-direction: column;
     position: fixed;
     justify-content: space-evenly;
-    top: 7rem;
+    top: 150px;
     left: 100%;
     transition: all 1s;
   }
@@ -174,4 +180,81 @@ body {
   }
 }
 
+/* ..........aside.......... */
+.img-cards {
+  height: 100%;
+  width: 100%;
+}
 
+.aside-cards {
+  width: 100%;
+  background-color: var(--g3);
+}
+
+.ul-cards {
+  height: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 10% 20% 10% 20% 10% 20% 10%;
+}
+
+#h1-cards {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 30px;
+  font-display: bold;
+  align-content: center;
+  justify-self: center;
+  z-index: 1;
+}
+
+.li-cards {
+  grid-column: 2 / 3;
+  border: solid .2rem var(--g1);
+}
+
+.li-cards:hover {
+  display: pointer;
+}
+
+.list-cards1 {
+  grid-row: 2 / 3;
+}
+
+.list-cards2 {
+  grid-row: 4 / 5;
+}
+
+.list-cards3 {
+  grid-row: 6 / 7;
+}
+
+.h3-cards {
+  font-size: 15px;
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ..........main.......... */
+.main {
+  background-image: url(/images/Welcome\ to\ Utah\ sign\ in\ USA.jpeg);
+  background-color: var(--g5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-style: bold;
+}
+
+.main p {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
