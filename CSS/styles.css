@@ -1,15 +1,18 @@
-@import url(/Fontawesome/css/all.css);
-
 :root {
-  --main: #126dc4;
-  --secondary: #0e80a7;
-  --third: #ffb100;
-  --g1: #1c2e40;
-  --g2: #eef4fa;
-  --g3: #205162;
-  --g4: #edf5f8;
-  --g5: #745a1e;
-  --g6: #fff9ec;
+  --background: #f1f1f1;
+  --background-secondary: #d7d7d7;
+  --text: #333333;
+  --headings: #B2441E;
+  --links: #1f89ad;
+  --links-hover: #ffb612;
+  --buttons: #1f89ad;
+  --buttons-hover: #ffb612;
+  --forms: #f1f1f1;
+  --forms-text: #333333;
+  --forms-background: #edf5f8;
+  --forms-border: #949494;
+  --success-messages: #463D29;
+  --error-messages: #ffb612;
 }
 
 * {
@@ -19,16 +22,22 @@
   font-family: Century Gothic, PT Serif;
 }
 
+.headings {
+  color: var(--headings);
+}
+
+.text {
+  color: var(--text);
+}
+
+.buttons {
+  background-color: var(--buttons);
+  color: var(--forms-text);
+}
+
 body {
   display: grid;
-  grid-template-areas: 
-  "header header header"
-  "navbar navbar navbar"
-  "sidebar main main"
-  "footer footer footer";
-  grid-template-rows: 100px 50px 1fr 100px;
-  grid-template-columns: 200px 1fr 1fr;
-  height: 100vh;
+  background-color: var(--background);
 }
 
 #header {
@@ -51,9 +60,10 @@ body {
   grid-area: footer;
 }
 
+
+
 /* ..........header.......... */
 #header {
-  background-color: var(--main);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,11 +88,11 @@ body {
 }
 
 /* ..........navbar.......... */
-.navbar {
-  background-color: var(--secondary);
+#navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: var(--background-secondary);
 }
 
 .checkBtn {
@@ -91,7 +101,6 @@ body {
   cursor: pointer;
   font-size: 30px;
   float: right;
-  color: var(--third);
   line-height: 80px;
 }
 
@@ -99,29 +108,22 @@ body {
   display: none;
 }
 
-.navbar-menu ul {
+#navbar-menu ul {
   display: flex;
   margin: 0px 50px;
   list-style: none;
 }
 
-.navbar-menu ul li a {
+#navbar-menu ul li a {
   padding: 5px 10px;
   margin: 0px 10px;
   font-size: 1.2rem;
-  color: var(--g6);
   cursor: pointer;
   text-decoration: none;
   border-style: solid;
   border-width: 1px;
   border-radius: 30px;
-  border-color: var(--third);
   transition: all 1s;
-}
-
-.navbar-menu ul li a:hover {
-  background-color: var(--g6);
-  color: var(--g1);
 }
 
 .dropdown {
@@ -129,7 +131,6 @@ body {
   position: absolute;
   width: 15rem;
   z-index: 2;
-  background: black;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -153,10 +154,9 @@ body {
 }
 
 @media screen and (max-width:805px) {
-  .navbar-list {
+  #navbar-list {
     width: 100%;
     height: 80vh;
-    background-color: #21282C;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -180,81 +180,18 @@ body {
   }
 }
 
-/* ..........aside.......... */
-.img-cards {
-  height: 100%;
-  width: 100%;
-}
-
-.aside-cards {
-  width: 100%;
-  background-color: var(--g3);
-}
-
-.ul-cards {
-  height: 100%;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 10% 20% 10% 20% 10% 20% 10%;
-}
-
-#h1-cards {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  font-size: 30px;
-  font-display: bold;
-  align-content: center;
-  justify-self: center;
-  z-index: 1;
-}
-
-.li-cards {
-  grid-column: 2 / 3;
-  border: solid .2rem var(--g1);
-}
-
-.li-cards:hover {
-  display: pointer;
-}
-
-.list-cards1 {
-  grid-row: 2 / 3;
-}
-
-.list-cards2 {
-  grid-row: 4 / 5;
-}
-
-.list-cards3 {
-  grid-row: 6 / 7;
-}
-
-.h3-cards {
-  font-size: 15px;
-  text-align: center;
-  z-index: 1;
-  pointer-events: none;
-}
-
 /* ..........main.......... */
-.main {
-  background-image: url(/images/Welcome\ to\ Utah\ sign\ in\ USA.jpeg);
-  background-color: var(--g5);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.main h1 {
+#main h1 {
   text-align: center;
   padding: 10px;
   font-size: 40px;
   font-style: bold;
 }
 
-.main p {
+#main p {
   text-align: center;
   padding: 10px;
   font-size: 15px;
 }
+
+/* ..........footer.......... */

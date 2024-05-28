@@ -1,0 +1,20 @@
+body {
+grid-template-areas: 
+"header header header"
+"navbar navbar navbar"
+"sidebar main main"
+"sidebar facts facts"
+"map map map"
+"footer footer footer";
+grid-template-rows: 100px 50px 1fr 1fr 2fr 100px;
+grid-template-columns: 200px 1fr 1fr;
+height: 200vh;
+}
+
+/* ..........main.......... */
+#main {
+  background-image: url(/images/Welcome\ to\ Utah\ sign\ in\ USA.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -4,68 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/aside_cards.css">
+  <link rel="stylesheet" href="CSS/facts.css">
   <link rel="stylesheet" href="Fontawesome/css/all.css">
   <link rel="shortcut icon" href="images/Seal_of_Utah.png" type="image/x-icon">
   <title>State of Utah</title>
 </head>
 <body>
   <header id="header">
-    <div class="header-left">
+    <div id="header-left">
       <img src="Images/Flag_of_the_State_of_Utah_(2011-2024).png" alt="Utah Flag" id="flag">
     </div>
-    <h1 id="title">Welcome to Utah</h1>
-    <div class="header-right">
+    <h1 class="headings" id="title">Welcome to Utah</h1>
+    <div id="header-right">
       <img src="images/Seal_of_Utah.png" alt="Utah Seal" id="Seal">
     </div>
   </header>
 
   <nav class="navbar" id="navbar">
-    <div class="navbar-menu">
+    <div id="navbar-menu">
       <input type="checkbox" id="check">
       <label for="check" class="checkBtn">
         <i class="fa-solid fa-bars"></i>
       </label>
-      <ul class="navbar-list">
-        <li><a href="#">Home</a></li>
-        <li class="has-dropdown"><a href="#">Cities</a>
+      <ul id="navbar-list">
+        <li><a class="buttons" href="#">Home</a></li>
+        <li class="has-dropdown"><a class="buttons" href="#">Cities</a>
           <ul class="dropdown">
-            <li class="dropdown-item"><a href="#">Salt Lake City</a></li>
-            <li class="dropdown-item"><a href="#">Heber City</a></li>
-            <li class="dropdown-item"><a href="#">St. George</a></li>
+            <li class="dropdown-item"><a class="buttons" href="#">Salt Lake City</a></li>
+            <li class="dropdown-item"><a class="buttons" href="#">Heber City</a></li>
+            <li class="dropdown-item"><a class="buttons" href="#">Moab City</a></li>
           </ul>
         </li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="buttons" href="#">Jobs</a></li>
+        <li><a class="buttons" href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
+
   <section class="main" id="main">
-    <h1>State of Utah</h1>
-    <p>Utah is the state of Utah. It's located in the western half of the Northern hemisphere. It's the only state in the Northern hemisphere with land in the contiguous United States. </p>
+    <h1 class="headings">State of Utah</h1>
+    <p class="text">Utah is the state of Utah. It's located in the western half of the Northern hemisphere. It's the only state in the Northern hemisphere with land in the contiguous United States. </p>
+  </section>
+  <section id="facts">
+    <h1 id="h1-facts"></h1>
   </section>
   <aside id="sidebar" class="aside-cards">
-    <ul class="ul-cards">
-      <h1 id="h1-cards">Cities</h1>
-      <li class="li-cards list-cards1">
+    <ul id="ul-cards">
+      <h1 class="h1-cards headings">Cities</h1>
+      <li class="li-cards" id="list-cards1">
         <a href="">
           <img src="/Images/State_Capital.jpg" alt="State Capital" class="img-cards">
         </a>
-          <h3 class="h3-cards">Salt Lake City</h3>
+          <h3 class="h3-cards text">Salt Lake City</h3>
       </li>
-      <li class="li-cards list-cards2">
+      <li class="li-cards" id="list-cards2">
         <a href="">
           <img src="/Images/Hebervalley.jpg" alt="Heber Valley" class="img-cards">
         </a>
-          <h3 class="h3-cards">Heber City</h3>
+          <h3 class="h3-cards text">Heber City</h3>
       </li>
-      <li class="li-cards list-cards3">
+      <li class="li-cards" id="list-cards3">
         <a href="">
           <img src="/Images/Delicate_arch_sunset.jpg" alt="Delicate Arch" class="img-cards">
         </a>
-          <h3 class="h3-cards">Moab</h3>
+          <h3 class="h3-cards text">Moab City</h3>
       </li>
     </ul>
   </aside>
+
   <footer id="footer">Footer</footer>
 </body>
 </html>
