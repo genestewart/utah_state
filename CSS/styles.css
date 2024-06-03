@@ -35,6 +35,10 @@
   color: var(--forms-text);
 }
 
+.buttons:hover {
+  background-color: var(--buttons-hover);
+}
+
 body {
   display: grid;
   background-color: var(--background);
@@ -54,6 +58,14 @@ body {
 
 #main {
   grid-area: main;
+}
+
+#facts {
+  grid-area: facts;
+}
+
+#map {
+  grid-area: map;
 }
 
 #footer {
@@ -195,3 +207,11 @@ body {
 }
 
 /* ..........footer.......... */
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background-secondary);
+  padding: 10px;
+  font-size: 20px;
+}

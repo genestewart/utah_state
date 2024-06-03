@@ -52,3 +52,7 @@
   z-index: 1;
   pointer-events: none;
 }
+
+#sidebar {
+  height: 800px;
+}
