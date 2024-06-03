@@ -13,7 +13,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 10% 20% 10% 20% 10% 20% 10%;
+  grid-template-rows: 1fr 160px 1fr 160px 1fr 160px 1fr;
 }
 
 .h1-cards {
@@ -51,8 +51,4 @@
   text-align: center;
   z-index: 1;
   pointer-events: none;
-}
-
-#sidebar {
-  height: 800px;
 }
