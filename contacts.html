@@ -6,9 +6,11 @@
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/contacts.css">
   <link rel="stylesheet" href="Fontawesome/css/all.css">
+  <link rel="stylesheet" href="styles.js">
   <link rel="shortcut icon" href="images/Seal_of_Utah.png" type="image/x-icon">
   <title>Contacts For Utah</title>
 </head>
+
 <body>
   <header id="header">
     <div id="header-left">
@@ -42,7 +44,47 @@
   </nav>
 
   <section class="main" id="main">
-    <h1 class="headings">State of Utah Contacts</h1>
+    <h1 class="headings" id="contact-h1">State of Utah Contacts</h1>
+    <div class="contacts">
+      <div class="contact-card cont-card1">
+        <h2 class="city">Salt Lake City</h2>
+        <h3 class="address">123 Main Street</h3>
+        <h3 class="phone">123-456-7890</h3>
+        <button class="buttons open-button">Contact Us</button>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="contact-card cont-card2">
+        <h2 class="city">Heber City</h2>
+        <h3 class="address">123 Main Street</h3>
+        <h3 class="phone">123-456-7890</h3>
+        <button class="buttons open-button">Contact Us</button>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="contact-card cont-card3">
+        <h2 class="city">Moab City</h2>
+        <h3 class="address">123 Main Street</h3>
+        <h3 class="phone">123-456-7890</h3>
+        <button class="buttons open-button">Contact Us</button>
+      </div>
+    </div>
+
+    <dialog class="modal" id="modal">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address..">
+        <label for="email2">Verify Email Address</label>
+        <input type="email" id="email2" name="email2" placeholder="Your email address..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <button class="buttons close-button" type="submit">Submit Form</button>
+      </form>
+    </dialog>
   </section>
 
   <footer id="footer">Footer</footer>
