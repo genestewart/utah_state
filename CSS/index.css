@@ -28,11 +28,13 @@
   grid-template-areas: 
   "header header header"
   "navbar navbar navbar"
-  "sidebar main main"
-  "sidebar facts facts"
+  "facts main main"
+  "facts state-cards state-cards"
   "map map map"
   "footer footer footer";
   grid-template-rows: 100px 50px 1fr 1fr 2fr 100px;
   grid-template-columns: 200px 1fr 1fr;
   }
   }
+
+  
