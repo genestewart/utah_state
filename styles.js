@@ -18,4 +18,15 @@ const addOpenEventListener = (element) => {
 for(let i = 0; i < openElements.length; i++) {
   addOpenEventListener(openElements[i]);
 }
-console.log('Ham')
+
+const email1 = document.getElementById('#email');
+const email2 = document.getElementById('#email2');
+const error = document.getElementById('#error-message');
+
+email2.addEventListener(function() {
+  if (email1.value !== email2.value) {
+    error.textContent = 'Emails do not match';
+  } else {
+    error.textContent = '';
+  }
+});

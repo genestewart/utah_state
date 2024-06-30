@@ -5,23 +5,30 @@
   "navbar navbar"
   "main main"
   "footer footer";
-  grid-template-rows: 100px 50px 1fr 100px;
+  grid-template-rows: 100px 50px 1fr 150px;
   grid-template-columns: 1fr 1fr;
   }
   }
   
-  #main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+#main {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  table, th, td {
-    border: 1px solid black;
-  }
+.jobs-headings {
+  position: absolute;
+  top: 200px;
+}
 
-  table {
-    padding: 2px;
-    width: 70%;
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  position: relative;
+  padding: 2px;
+  width: 70%;
   }
