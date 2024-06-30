@@ -11,6 +11,47 @@
   grid-column: 2/3;
 }
 
+/* aside style */
+#facts {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr;
+}
+
+#facts-cards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#header-facts {
+  font-size: 30px;
+  font-display: bold;
+  align-content: center;
+  text-align:  center;
+  padding: 10px 0;
+}
+
+.facts-cards {
+  grid-column: 2 / 3;
+  align-content: center;
+  text-align: center;
+}
+
+#facts-cards-1 {
+  grid-row: 1 / 2;
+}
+
+#facts-cards-2 {
+  grid-row: 2 / 3;
+}
+
+#facts-cards-3 {
+  grid-row: 3 / 4;
+}
+
 #map {
   display: flex;
   justify-content: center;
@@ -33,7 +74,7 @@
   "map map map"
   "footer footer footer";
   grid-template-rows: 100px 50px 1fr 1fr 2fr 100px;
-  grid-template-columns: 200px 1fr 1fr;
+  grid-template-columns: 300px 1fr 1fr;
   }
   }
 
