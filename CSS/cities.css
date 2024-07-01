@@ -29,28 +29,29 @@
   }
 
 
-  @media screen and (min-width: 800px) {  
-    body {
-    grid-template-areas: 
-    " header header header"
-    "navbar navbar navbar"
-    "facts main main"
-    "facts main main"
-    "footer footer footer";
-    grid-template-rows: 150px 50px 1fr 1fr 100px;
-    grid-template-columns: 250px 1fr 1fr;
-    }
-    }
+@media screen and (min-width: 800px) {  
+  body {
+  grid-template-areas: 
+  "header header header"
+  "navbar navbar navbar"
+  "facts main main"
+  "facts main main"
+  "footer footer footer";
+  grid-template-rows: 150px 50px 1fr 1fr 100px;
+  grid-template-columns: 250px 1fr 1fr;
+  }
+  }
+
+@media screen and (max-width: 800px) {
+  body {
+  grid-template-areas: 
+  "header header"
+  "navbar navbar"
+  "main main"
+  "facts facts"
+  "footer footer";
+  grid-template-rows: 100px 50px 1fr .5fr 150px;
+  grid-template-columns: 1fr 1fr;
+}
+}
     
-  @media screen and (min-width: 1000px) {  
-    body {
-    grid-template-areas: 
-    " header header header"
-    "navbar navbar navbar"
-    "facts main main"
-    "facts main main"
-    "footer footer footer";
-    grid-template-rows: 100px 50px 1fr 1fr 150px;
-    grid-template-columns: 250PX 1fr 1fr;
-    }
-    }

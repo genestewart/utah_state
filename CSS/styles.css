@@ -275,4 +275,12 @@ h3 {
 
 ol li {
   font-size: 12px;
+  padding-right: 5px;
+}
+
+.refferences {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
