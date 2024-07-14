@@ -1,4 +1,4 @@
-#main {
+/* #main {
   height: 75vh;
   display: flex;
   flex-direction: column;
@@ -19,17 +19,23 @@ table {
   position: relative;
   padding: 2px;
   width: 70%;
+} */
+
+table, th, td {
+  border: 1px solid black;
 }
+
+
 
 @media screen and (min-width: 800px) {  
   body {
   grid-template-areas: 
-  "header header"
-  "navbar navbar"
-  "main main"
-  "footer footer";
+  "header header header"
+  "navbar navbar navbar"
+  "facts main main"
+  "footer footer footer";
   grid-template-rows: 100px 50px 1fr 150px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 250px 1fr 1fr;
   }
 }
  
@@ -39,8 +45,9 @@ table {
   "header header"
   "navbar navbar"
   "main main"
+  "facts facts"
   "footer footer";
-  grid-template-rows: 100px 50px 1fr 150px;
+  grid-template-rows: 100px 50px 1fr .5fr  150px;
   grid-template-columns: 1fr 1fr;
   }
 }

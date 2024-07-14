@@ -1,9 +1,4 @@
-#main {
-  display: flex;
-  flex-direction: row;
-}
-
-#main img {
+.right-float {
   float: right;
   width: 70%;
   height: 100vh;
