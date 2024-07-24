@@ -20,14 +20,13 @@ for(let i = 0; i < openElements.length; i++) {
 const email1 = document.getElementById('email');
 const email2 = document.getElementById('email2');
 const error = document.getElementById('error-message');
-const verifyEmail = () => {
-  if (email1.value !== email2.value) {
-    error.textContent = 'Emails do not match';
-  } else {
-    error.textContent = '';
-  }
+
+function checkEmail() {
+  error.innerText = email1.value == email2.value ? '' : 'Not Matching';
 }
 
-email2.addEventListener('blur', ()=> {
-  verifyEmail();
-});
+email1.addEventListener('keyup', () => {
+  if (email1.value.length != 0) checkEmail();
+})
+
+email2.addEventListener('keyup', checkEmail);

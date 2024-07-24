@@ -35,6 +35,10 @@
   padding: 10px;
 }
 
+#error-message {
+  color: var(--headings);
+}
+
 .modal::backdrop {
   background-color: var(--forms-background);
 }
