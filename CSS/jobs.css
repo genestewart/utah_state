@@ -1,14 +1,16 @@
-/* #main {
+#main {
   height: 75vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .jobs-headings {
   position: absolute;
-  top: 200px;
+  left: 45%;
+  top: 150px;
+  /* transform: translate(-50%, 0); */
 }
 
 table, th, td {
@@ -17,15 +19,14 @@ table, th, td {
 
 table {
   position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 25px 0;
   padding: 2px;
   width: 70%;
-} */
-
-table, th, td {
-  border: 1px solid black;
+  height: 70%;
 }
-
-
 
 @media screen and (min-width: 800px) {  
   body {
